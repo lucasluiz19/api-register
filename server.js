@@ -10,6 +10,10 @@ app.use(cors())
 
 const port = process.env.PORT || 3000;
 
+app.get("/", (req,res)=>{
+    return res.json("hello word")
+})
+
 
 app.post('/informative', async(req,res)=>{
 
